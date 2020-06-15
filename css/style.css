@@ -1,0 +1,15 @@
+body {
+  margin: 10px;
+}
+
+.header-row {
+  border: 1px solid red;
+}
+
+.container-row {
+  border: 1px solid green;
+}
+
+.footer-row {
+  border: 1px solid yellowgreen;
+}

@@ -73,7 +73,7 @@
     <!-- Header -->
     <header class="jumbotron">
       <div class="container">
-        <div class="row header-row row-header">
+        <div class="row row-header">
           <div class="col-12 col-sm-6">
             <h1>Ristorante con Fusion</h1>
             <p>
@@ -82,8 +82,16 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm align-self-center">
+          <div class="col-12 col-sm-3 align-self-center">
             <img src="./img/logo.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <a
+              href="#reservation"
+              class="btn btn-warning btn-sm btn-block"
+              role="button"
+              >Reserve</a
+            >
           </div>
         </div>
       </div>
@@ -91,7 +99,8 @@
 
     <!-- Main content -->
     <div class="container">
-      <div class="row container-row row-content align-items-center">
+      <!-- 1st Item -->
+      <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
@@ -117,22 +126,35 @@
         </div>
       </div>
 
-      <div class="row container-row row-content align-items-center">
+      <!-- 2nd Item -->
+      <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+          <div class="media">
+            <div class="media-body">
+              <h2 class="mt-0">
+                Weekend Grand Buffet <span class="badge badge-danger">NEW</span>
+              </h2>
+              <p class="d-none d-sm-block">
+                Featuring mouthwatering combinations with a choice of five
+                different salads, six enticing appetizers, six main entrees and
+                five choicest desserts. Free flowing bubbly and soft drinks. All
+                for just $19.99 per person
+              </p>
+            </div>
+            <img
+              src="./img/buffet.png"
+              alt="buffet"
+              class="d-flex ml-3 img-thumbnail align-self-center"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="row container-row row-content align-items-center">
+      <!-- 3rd Item -->
+      <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Meet our Culinary Specialists</h3>
         </div>
@@ -152,6 +174,134 @@
                 world, he specializes in creating mouthwatering Indo-Italian
                 fusion experiences.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reservation -->
+      <div class="row row-content align-items-center" id="reservation">
+        <div class="col-12 offset-sm-2 col-sm-8 offset-sm-2">
+          <div class="card">
+            <h3 class="card-header bg-success text-white">Reserve a Table</h3>
+            <div class="card-body">
+              <form>
+                <!-- Selecting Guest Numbers -->
+                <div class="form-group row">
+                  <label for="numberofGeust" class="col-12 col-sm-3"
+                    >Number of Guests</label
+                  >
+                  <div class="col-12 col-sm">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >1</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >2</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="inlineRadio3"
+                        >3
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio4"
+                        value="option4"
+                      />
+                      <label class="form-check-label" for="inlineRadio4"
+                        >4</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio5"
+                        value="option5"
+                      />
+                      <label class="form-check-label" for="inlineRadio5"
+                        >5</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio6"
+                        value="option6"
+                      />
+                      <label class="form-check-label" for="inlineRadio6"
+                        >6</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Selecting Date and Time -->
+                <div class="row">
+                  <div class="col-12 col-sm-3">
+                    <label for="date-time">Date and Time</label>
+                  </div>
+                  <div class="col-12 col-sm-5">
+                    <label for="date" class="sr-only">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      placeholder="Date"
+                    />
+                  </div>
+                  <div class="col-12 col-sm">
+                    <label for="time" class="sr-only">Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="time"
+                      placeholder="Time"
+                    />
+                  </div>
+                </div>
+                <br />
+
+                <!-- Confirming the reservation -->
+                <div class="row">
+                  <div class="col-6 offset-sm-3 col-sm-4">
+                    <button type="submit" class="btn btn-success mb-2">
+                      Reserve
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

@@ -27,3 +27,5 @@ $(document).ready(function () {
     }
   });
 });
+
+// ! Need to convert JQuery to JS later on.

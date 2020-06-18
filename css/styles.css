@@ -52,3 +52,13 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+/* designing modals */
+.modal-content {
+  background: #d1c4e9; }
+  .modal-content .modal-header {
+    background: #512da8; }
+    .modal-content .modal-header h4 {
+      color: #ddd; }
+    .modal-content .modal-header .close {
+      color: #d1c4e9; }

@@ -78,3 +78,18 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+/* designing modals */
+.modal-content {
+  background: $background-pale;
+  .modal-header {
+    background: $background-dark;
+    h4 {
+      color: $lt-gray;
+    }
+
+    .close {
+      color: $background-pale;
+    }
+  }
+}

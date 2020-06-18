@@ -29,3 +29,14 @@ $(document).ready(function () {
 });
 
 // ! Need to convert JQuery to JS later on.
+
+// Adding jQuery codes to active modals
+$(document).ready(function () {
+  $("#loginBtn").click(function () {
+    $("#loginModal").modal("show");
+  });
+
+  $("#reserveBtn").click(function () {
+    $("#reservation").modal("show");
+  });
+});

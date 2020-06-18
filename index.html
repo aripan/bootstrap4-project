@@ -68,12 +68,16 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a
+            <!-- <a
               href=""
               class="nav-link"
               data-toggle="modal"
               data-target="#loginModal"
-            >
+            > -->
+            <!-- ! removed data-* to apply JS codes -->
+            <a class="nav-link" id="loginBtn">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
               <span class="fa fa-sign-in"></span> Login
             </a>
           </span>
@@ -325,11 +329,18 @@
               data-placement="bottom"
               >Reserve</a
             > -->
-            <a
+            <!-- <a
               role="button"
               class="btn btn-block nav-link btn-warning"
               data-toggle="modal"
               data-target="#reservation"
+              >Reserve Table</a
+            > -->
+            <!-- ! removed data-* to apply JS codes -->
+            <a
+              role="button"
+              class="btn btn-block nav-link btn-warning"
+              id="reserveBtn"
               >Reserve Table</a
             >
           </div>

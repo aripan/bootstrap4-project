@@ -12,9 +12,11 @@
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copybootstrap-all": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css dist/bootstrap.min.css && copyfiles -f node_modules/bootstrap-social/bootstrap-social.css dist/bootstrap-social.css",
+    "copyjs-all": "copyfiles -f node_modules/jquery/dist/jquery.slim.min.js dist/jquery.slim.min.js && copyfiles -f node_modules/popper.js/dist/umd/popper.min.js dist/popper.min.js && copyfiles -f node_modules/bootstrap/dist/js/bootstrap.min.js dist/bootstrap.min.js",
     "imagemin": "imagemin img/* --out-dir='dist/img'",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run copyfonts && npm run imagemin  && npm run usemin"
+    "build": "npm run clean && npm run copyfonts && npm run copybootstrap-all && npm run copyjs-all && npm run imagemin  && npm run usemin"
   },
   "author": "",
   "license": "ISC",
